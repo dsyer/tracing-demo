@@ -1,7 +1,5 @@
 package com.example.demo;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.log;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.jupiter.api.Test;
@@ -29,6 +27,10 @@ class DemoApplicationTests {
 
 	@LocalServerPort
 	private int port;
+
+	public static void main(String[] args) {
+		DemoApplication.main(args);
+	}
 
 	@Test
 	void contextLoads() {
